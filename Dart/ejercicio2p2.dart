@@ -12,9 +12,13 @@ class Bicicleta {
       _estaRentada = false,
       _numeroDeSerie = 0;
 
+  int get numeroserie => _numeroDeSerie;
+  int get rentasRealizadas => _rentasRealizadas;
+  bool get estaRentada => _estaRentada;
+
   mostrarInformacion() {
     print(
-      'Marca de la bicicleta: ${marca} Modelo: ${modelo} Color:${color} Precio por Hora:${precioPorHora} ',
+      'Marca de la bicicleta: $marca Modelo: $modelo Color:$color Precio por Hora:$_precioPorHora ',
     );
   }
 }
