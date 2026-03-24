@@ -24,7 +24,17 @@ class Velocimetro {
 
 void main(List<String> args) {
   var velocidad = Velocimetro();
-  print(velocidad.velocidad);
+  print(velocidad.situacion);
   velocidad.velocidad = 0.5;
+  print(velocidad.velocidad);
+  print(velocidad.situacion);
+  velocidad.velocidad = 55.5;
+  print(velocidad.velocidad);
+  print(velocidad.situacion);
+  velocidad.velocidad = 105.0;
+  print(velocidad.velocidad);
+  print(velocidad.situacion);
+  velocidad.velocidad = 155.6;
+  print(velocidad.velocidad);
   print(velocidad.situacion);
 }
