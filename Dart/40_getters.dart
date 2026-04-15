@@ -1,9 +1,8 @@
 class Empleado {
   String _nombre;
   double _salario;
-  String _rfc;
 
-  Empleado(this._nombre, this._salario, this._rfc);
+  Empleado(this._nombre, this._salario);
 
   // Getters simples
   String get nombre => _nombre; // Lee _nombre
@@ -12,7 +11,7 @@ class Empleado {
 }
 
 void main() {
-  var empleado = Empleado('Laura Pérez', 12000.0, 'PELJ980415XXX');
+  var empleado = Empleado('Laura Pérez', 12000.0);
 
   print(empleado.nombre); // Laura Pérez  ← usa el getter
   print(empleado.salario); // 12000.0      ← usa el getter
