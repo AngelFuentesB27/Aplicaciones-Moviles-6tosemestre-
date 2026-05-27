@@ -8,6 +8,8 @@ class CounterScreen extends StatefulWidget {
 }
 
 class _CounterScreenState extends State<CounterScreen> {
+  int clickCounter = 100;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,14 +25,16 @@ class _CounterScreenState extends State<CounterScreen> {
           children: [
             Text('Cantidad de Clicks', style: TextStyle(fontSize: 25)),
             Text(
-              '10',
+              '$clickCounter',
               style: TextStyle(fontSize: 70, fontWeight: FontWeight(50)),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          clickCounter++;
+        },
         child: Icon(Icons.plus_one_outlined),
       ),
     );
